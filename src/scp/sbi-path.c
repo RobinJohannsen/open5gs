@@ -82,7 +82,9 @@ int scp_sbi_open(void)
      * ogs_sbi_self()->nf_instance_id means NF's InstanceId.
      */
     ogs_list_for_each(&ogs_sbi_self()->nf_instance_list, nf_instance) {
+#if 0
         ogs_sbi_nf_service_t *service = NULL;
+#endif
         ogs_sbi_client_t *client = NULL;
 
         /* Build NF instance information. It will be transmitted to NRF. */

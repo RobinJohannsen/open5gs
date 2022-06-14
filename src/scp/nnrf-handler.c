@@ -295,7 +295,9 @@ void scp_nnrf_handle_nf_discover(
         }
 
         if (NF_INSTANCE_IS_OTHERS(nf_instance->id)) {
+#if 0
             scp_sess_t *sess = NULL;
+#endif
 
             handled = ogs_sbi_nnrf_handle_nf_profile(
                         nf_instance, NFProfile, NULL, NULL);

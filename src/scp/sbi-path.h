@@ -33,9 +33,14 @@ bool scp_nnrf_nfm_send_nf_register(ogs_sbi_nf_instance_t *nf_instance);
 
 bool scp_sbi_send(ogs_sbi_nf_instance_t *nf_instance, ogs_sbi_xact_t *xact);
 
+#if 0
 bool scp_sbi_discover_and_send(OpenAPI_nf_type_e target_nf_type,
         scp_sess_t *sess, ogs_sbi_stream_t *stream, void *data,
         ogs_sbi_request_t *(*build)(scp_sess_t *sess, void *data));
+bool scp_sbi_discover_and_send(OpenAPI_nf_type_e target_nf_type,
+        scp_sess_t *sess, ogs_sbi_stream_t *stream, void *data,
+        ogs_sbi_request_t *(*build)(scp_sess_t *sess, void *data));
+#endif
 
 void scp_sbi_send_response(ogs_sbi_stream_t *stream, int status);
 

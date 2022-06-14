@@ -26,7 +26,9 @@
 extern "C" {
 #endif
 
+#if 0
 typedef struct scp_sess_s scp_sess_t;
+#endif
 typedef struct ogs_sbi_request_s ogs_sbi_request_t;
 typedef struct ogs_sbi_response_s ogs_sbi_response_t;
 typedef struct ogs_sbi_message_s ogs_sbi_message_t;

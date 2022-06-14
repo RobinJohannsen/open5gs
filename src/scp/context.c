@@ -23,7 +23,9 @@ static scp_context_t self;
 
 int __scp_log_domain;
 
+#if 0
 static OGS_POOL(scp_sess_pool, scp_sess_t);
+#endif
 
 static int context_initialized = 0;
 
